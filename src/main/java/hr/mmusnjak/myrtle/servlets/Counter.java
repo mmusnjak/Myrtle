@@ -33,7 +33,7 @@ public class Counter extends HttpServlet {
 	 */
 	public Counter() {
 		super();
-		// TODO Auto-generated constructor stub
+		// TODO Auto-generated constructor stub - will not be fixed
 	}
 
 	/**
