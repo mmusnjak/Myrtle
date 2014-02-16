@@ -33,7 +33,7 @@ public class Counter extends HttpServlet {
 	 */
 	public Counter() {
 		super();
-		// TODO Auto-generated constructor stub - will not be fixed
+		// Auto-generated constructor stub - will not be fixed
 	}
 
 	/**
@@ -45,7 +45,7 @@ public class Counter extends HttpServlet {
 		// Set a cookie for the user, so that the counter does not increate
 		// every time the user press refresh
 		Context ctx;
-		String myVar = "";
+		String myVar = "unknown";
 		try {
 			ctx = (Context) (new InitialContext().lookup("java:comp/env"));
 			myVar = (String) ctx.lookup("config");
@@ -56,7 +56,7 @@ public class Counter extends HttpServlet {
 		Properties prop = new Properties();
 		InputStream input = null;
 
-		if (myVar != "") {
+		if (myVar != "unknown") {
 			try {
 				input = new FileInputStream(myVar);
 				prop.load(input);
