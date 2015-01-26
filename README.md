@@ -3,7 +3,7 @@ Myrtle
 
 Maven, Spring, Github, Tomcat deploys, Jenkins builds and deploys, all in one
 
-Add the following content:
+Add the following content (look at raw file contents):
 <?xml version='1.0' encoding='utf-8'?>
 <Context>
 	<Environment name="config" value="c:\Temp\props.properties" type="java.lang.String" override="false"/>
